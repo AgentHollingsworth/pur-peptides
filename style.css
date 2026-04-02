@@ -186,23 +186,22 @@ a { text-decoration: none; color: inherit; cursor: pointer; }
   position: relative; overflow: hidden;
   min-height: 86vh; display: flex; flex-direction: column; justify-content: flex-end;
   padding: 0 28px 60px;
-  background: linear-gradient(
-    160deg,
-    #0d1208 0%,
-    #0a0f0a 25%,
-    #080808 55%,
-    #0a0a0a 100%
-  );
+  background-color: #080a08;
+  background-image: url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center 40%;
 }
 
-/* Atmospheric grid overlay */
+/* Dark overlay over hero photo */
 .hero-full::before {
   content: '';
   position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(106,131,96,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(106,131,96,0.04) 1px, transparent 1px);
-  background-size: 80px 80px;
+  background: linear-gradient(
+    160deg,
+    rgba(6,10,6,0.82) 0%,
+    rgba(8,10,8,0.70) 40%,
+    rgba(6,8,6,0.85) 100%
+  );
   pointer-events: none;
 }
 
@@ -394,14 +393,22 @@ a { text-decoration: none; color: inherit; cursor: pointer; }
 .protocol-hero-full {
   position: relative; min-height: 55vh; display: flex;
   align-items: flex-end; padding: 0 28px 52px;
-  background: linear-gradient(160deg, #0c0e0c 0%, #080a08 40%, #080808 100%);
+  background-color: #080a0e;
+  background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center 40%;
   overflow: hidden;
 }
 
 .protocol-hero-full::before {
   content: '';
   position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(10,10,10,0.98) 0%, rgba(10,10,10,0.4) 60%, rgba(10,10,10,0.8) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(8,8,8,0.97) 0%,
+    rgba(8,10,14,0.55) 50%,
+    rgba(8,10,14,0.75) 100%
+  );
   z-index: 1;
 }
 
@@ -783,9 +790,22 @@ a { text-decoration: none; color: inherit; cursor: pointer; }
 
 .cf-image {
   position: relative; overflow: hidden; min-height: 360px;
-  background: linear-gradient(135deg, #080d12 0%, #0c1118 40%, #091018 100%);
+  background-color: #080d12;
+  background-image: url('https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=900&q=80');
+  background-size: cover;
+  background-position: center;
   display: flex; align-items: center; justify-content: center;
 }
+
+.cf-image::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(8,13,18,0.65) 0%, rgba(8,13,18,0.45) 100%);
+  pointer-events: none;
+}
+
+.cf-image .cf-image-inner,
+.cf-image .cf-badge-overlay { position: relative; z-index: 1; }
 
 .cf-image-inner {
   width: 180px; height: 180px; position: relative;
