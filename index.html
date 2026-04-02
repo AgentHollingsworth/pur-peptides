@@ -3,596 +3,950 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pur. — Precision Compounds for Performance & Longevity</title>
+  <title>The Clinical Atelier — Pur Peptides</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="navbar">
-    <div class="nav-inner">
-      <a href="#" class="logo" data-page="home">Pur.</a>
-      <ul class="nav-links">
-        <li><a href="#" data-page="home">Protocols</a></li>
-        <li><a href="#" data-page="catalog">Catalog</a></li>
-        <li><a href="#" data-page="science">Science</a></li>
-        <li><a href="#" data-page="affiliates">Affiliates</a></li>
-        <li><a href="#" data-page="account">Account</a></li>
-      </ul>
-      <div class="nav-right">
-        <div class="search-wrap">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          <input type="text" placeholder="Search compounds" />
-        </div>
-        <button class="btn-nav">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          Account
+<!-- ═══════════════ NAV ═══════════════ -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <span class="logo" data-page="home">The Clinical Atelier</span>
+    <ul class="nav-links">
+      <li><a data-page="science">Research</a></li>
+      <li><a data-page="catalog" class="active">Peptides</a></li>
+      <li><a data-page="home">Protocols</a></li>
+      <li><a data-page="science">Analytics</a></li>
+      <li><a data-page="science">Archive</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="search-wrap">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" placeholder="Search" />
+      </div>
+      <button class="btn-nav" data-page="account">Access Portal</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- HOME PAGE                               -->
+<!-- ═══════════════════════════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- Cinematic Hero -->
+  <section class="hero-full">
+    <div class="phf-grid-bg"></div>
+    <div class="phf-glow"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Sequence V4.6 Integrated</div>
+      <h1 class="hero-h1">Scientific Purity,<br>Bespoke Results.</h1>
+      <p class="hero-tagline">Precision molecular architecture for elite physiological optimization. We define the intersection of clinical rigor and individual performance.</p>
+      <div class="hero-ctas">
+        <button class="btn-green" data-page="home">
+          Explore Protocols
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
-        <button class="btn-nav btn-cart">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-          Cart
+        <button class="btn-ghost" data-page="catalog">Technical Catalog</button>
+      </div>
+      <div class="hero-est">Est. MMXXIV</div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <div class="trust-text-main">Third-Party Tested</div>
+          <div class="trust-text-sub">99.2% Purity Verified</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <div>
+          <div class="trust-text-main">ISO-9001 Certified</div>
+          <div class="trust-text-sub">Global Synthesis Compliance</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+        </div>
+        <div>
+          <div class="trust-text-main">Clinical Efficacy</div>
+          <div class="trust-text-sub">Bioavailability Validated</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+        </div>
+        <div>
+          <div class="trust-text-main">Secure Sourcing</div>
+          <div class="trust-text-sub">End-to-End Encryption</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Protocol Cards -->
+  <section class="protocols-section">
+    <div class="section-eyebrow">Precision Selection</div>
+    <div class="section-h2">
+      Current Active Protocols
+      <span class="section-link" data-page="catalog">View All Formulations →</span>
+    </div>
+    <div class="protocols-grid">
+
+      <div class="protocol-card" data-page="longevity">
+        <div class="pc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="pc-name">Longevity & NAD+ Support</div>
+        <p class="pc-desc">Advanced cellular rejuvenation targeting mitochondrial efficiency and DNA repair mechanisms.</p>
+        <div class="pc-tags">
+          <span class="pc-tag">Cellular</span>
+          <span class="pc-tag">Anti-Age</span>
+        </div>
+        <div class="pc-footer">
+          <button class="btn-outline" style="font-size:0.7rem;padding:8px 14px">Configure Stack</button>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--text-muted)"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+
+      <div class="protocol-card" data-page="lean">
+        <div class="pc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/></svg>
+        </div>
+        <div class="pc-name">Lean Mass & Metabolic</div>
+        <p class="pc-desc">Hyper-targeted partitioning agents designed to optimize body composition and nutrient utilization.</p>
+        <div class="pc-tags">
+          <span class="pc-tag">Metabolic</span>
+          <span class="pc-tag">Anabolic</span>
+        </div>
+        <div class="pc-footer">
+          <button class="btn-outline" style="font-size:0.7rem;padding:8px 14px">Configure Stack</button>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--text-muted)"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+
+      <div class="protocol-card" data-page="recovery">
+        <div class="pc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3.34 7a10 10 0 1 1-.14 10"/><path d="M8 5H2V0"/></svg>
+        </div>
+        <div class="pc-name">Deep Recovery & GH</div>
+        <p class="pc-desc">Nocturnal endocrine support and secretagogue sequences for accelerated tissue repair and deep sleep.</p>
+        <div class="pc-tags">
+          <span class="pc-tag">Endocrine</span>
+          <span class="pc-tag">Recovery</span>
+        </div>
+        <div class="pc-footer">
+          <button class="btn-outline" style="font-size:0.7rem;padding:8px 14px">Configure Stack</button>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--text-muted)"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Synthesis Process -->
+  <section class="synthesis-section">
+    <div class="section-eyebrow" style="margin-bottom:10px">Proprietary Methodology</div>
+    <h2>The Synthesis Process</h2>
+    <p>Our proprietary methodology ensures that every sequence meets the Atelier standard of clinical excellence.</p>
+    <div class="synthesis-steps">
+      <div class="synth-step">
+        <div class="synth-num">01</div>
+        <div class="synth-title">Molecular Mapping</div>
+        <p class="synth-desc">Custom profiling of biological markers to identify optimization vectors specific to your physiology.</p>
+      </div>
+      <div class="synth-step">
+        <div class="synth-num">02</div>
+        <div class="synth-title">Precision Synthesis</div>
+        <p class="synth-desc">Laboratory-grade peptide sequence orchestration utilizing advanced purification techniques.</p>
+      </div>
+      <div class="synth-step">
+        <div class="synth-num">03</div>
+        <div class="synth-title">Validation & Audit</div>
+        <p class="synth-desc">Rigorous third-party testing and internal diagnostic reviews before final portal access is granted.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advisory Signup -->
+  <section style="padding:0 28px 60px;max-width:1320px;margin:0 auto">
+    <div class="advisory-section">
+      <div class="advisory-inner">
+        <div class="advisory-h2">Access the<br><em>Scientific Advisory</em></div>
+        <p class="advisory-p">Receive curated research papers, technical briefings, and early access to molecular releases.</p>
+        <div class="advisory-form">
+          <input type="email" placeholder="Scientific Email Address" />
+          <button class="btn-green">Join Synthesis</button>
+        </div>
+        <div class="advisory-disclaimer">Secure Transmission. No Unauthorized Tracking.</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- LONGEVITY PROTOCOL                      -->
+<!-- ═══════════════════════════════════════ -->
+<div id="page-longevity" class="page">
+
+  <!-- Cinematic hero -->
+  <section class="protocol-hero-full">
+    <div class="phf-grid-bg"></div>
+    <div class="phf-glow"></div>
+    <div class="phf-content">
+      <div class="phf-badge">
+        <span class="tag">Biological Optimization Series</span>
+      </div>
+      <h1 class="phf-h1">Longevity<br>Protocol 01</h1>
+      <div class="phf-ctas">
+        <button class="btn-green" onclick="">
+          Initiate Protocol
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
+        <button class="btn-ghost">View Research Paper</button>
       </div>
     </div>
-  </nav>
+  </section>
 
-  <!-- HOME PAGE -->
-  <div id="page-home" class="page active">
-
-    <!-- HERO -->
-    <section class="hero-section">
-      <div class="hero-inner">
-        <div class="hero-left card">
-          <div class="tag">Precision compounds for performance and longevity</div>
-          <h1 class="hero-headline">Purity meets<br />performance.</h1>
-          <p class="hero-desc">Pur is a clean, protocol-first biohacking brand built for customers who want premium compounds, transparent testing, and a faster path to the right purchase.</p>
-          <div class="hero-ctas">
-            <button class="btn-primary" data-page="protocols">Explore Protocols</button>
-            <button class="btn-secondary" data-page="catalog">View Catalog</button>
-          </div>
-          <div class="trust-badges">
-            <div class="trust-badge">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              Third-party tested
-            </div>
-            <div class="trust-badge">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
-              US lab sourced
-            </div>
-            <div class="trust-badge">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
-              Fast fulfillment
-            </div>
-          </div>
-        </div>
-        <div class="hero-right card">
-          <div class="phone-mockup">
-            <div class="phone-screen">
-              <div class="app-logo">Pur.</div>
-              <div class="app-label">PROTOCOL</div>
-              <div class="app-compound">NAD+</div>
-              <div class="app-tags">
-                <span>Wellness</span>
-                <span>•</span>
-                <span>Precision</span>
-                <span>•</span>
-                <span>Purity</span>
-                <span>•</span>
-                <span>Verified</span>
-              </div>
-            </div>
-            <div class="phone-badges">
-              <span class="app-badge">SIMPLE</span>
-              <span class="app-badge">CLEAN</span>
-              <span class="app-badge">PREMIUM</span>
-            </div>
-          </div>
-        </div>
+  <!-- Stats bar -->
+  <div class="protocol-stats-bar">
+    <div class="psb-inner">
+      <div class="psb-item">
+        <div class="psb-label">Duration</div>
+        <div class="psb-value">12 Weeks</div>
       </div>
-    </section>
-
-    <!-- PROTOCOL CARDS -->
-    <section class="protocols-section">
-      <div class="protocols-inner">
-        <div class="protocol-teaser card" data-page="lean">
-          <div class="protocol-category">FOR BODY COMPOSITION</div>
-          <h2>Lean Protocol</h2>
-          <p>A cleaner path for customers focused on cutting phases, consistency, and performance aesthetics.</p>
-          <p class="protocol-sub">Built for affiliate traffic with a premium outcome-first offer, simple protocol education, and a fast path to checkout.</p>
-          <div class="compound-tags">
-            <span class="compound-tag">MOTS-c</span>
-            <span class="compound-tag">NAD+</span>
-            <span class="compound-tag">Optional add-on</span>
-          </div>
-        </div>
-        <div class="protocol-teaser card" data-page="recovery">
-          <div class="protocol-category">FOR REPAIR + RESILIENCE</div>
-          <h2>Recovery Protocol</h2>
-          <p>A sharper buying experience for customers who want a recovery-oriented stack without catalog overload.</p>
-          <p class="protocol-sub">Frames Pur as refined, trustworthy, and purpose-built for people prioritizing repair, movement, and rebound.</p>
-          <div class="compound-tags">
-            <span class="compound-tag">BPC-157</span>
-            <span class="compound-tag">TB-500</span>
-            <span class="compound-tag">Trust cues</span>
-          </div>
-        </div>
-        <div class="protocol-teaser card" data-page="longevity">
-          <div class="protocol-category">FOR LONG-TERM OPTIMIZATION</div>
-          <h2>Longevity Protocol</h2>
-          <p>Premium positioning for customers who care about energy, longevity, and feeling dialed in.</p>
-          <p class="protocol-sub">This page makes Pur feel less like a peptide store and more like a precise biohacking brand.</p>
-          <div class="compound-tags">
-            <span class="compound-tag">NAD+</span>
-            <span class="compound-tag">MOTS-c</span>
-            <span class="compound-tag">Elevated messaging</span>
-          </div>
-        </div>
+      <div class="psb-item">
+        <div class="psb-label">Intensity</div>
+        <div class="psb-value">Advanced</div>
       </div>
-    </section>
+      <div class="psb-item">
+        <div class="psb-label">Phase</div>
+        <div class="psb-value">Induction</div>
+      </div>
+      <div class="psb-item">
+        <div class="psb-label">Focus</div>
+        <div class="psb-value">Mitochondria</div>
+      </div>
+    </div>
   </div>
 
-  <!-- LONGEVITY PROTOCOL PAGE -->
-  <div id="page-longevity" class="page">
-    <section class="protocol-page">
-      <div class="protocol-layout">
-        <div class="protocol-left card">
-          <div class="tag">Longevity + optimization</div>
-          <h1>Longevity Protocol</h1>
-          <p class="protocol-desc">An elevated protocol for customers who care about energy, optimization, and long-term performance without a cluttered shopping experience.</p>
-          <div class="feature-boxes">
-            <div class="feature-box">Premium buyer language</div>
-            <div class="feature-box">Optimization framing</div>
-            <div class="feature-box">High-value customer fit</div>
-          </div>
-          <div class="why-card">
-            <div class="why-label">WHY THIS PAGE WORKS</div>
-            <p>This is the most refined page in the system, aimed at buyers who want Pur to feel like a luxury biohacking brand.</p>
-            <p>It leads with one clear goal, one clear stack, and one clear CTA instead of forcing visitors through a huge catalog first.</p>
-            <p>The trust layer sits directly next to the purchase path so customers can validate the brand without losing momentum.</p>
-          </div>
-        </div>
-        <div class="protocol-right card">
-          <div class="featured-label">FEATURED PROTOCOL</div>
-          <div class="featured-header">
-            <h2>Longevity Protocol</h2>
-            <span class="featured-badge">Premium</span>
-          </div>
-          <div class="protocol-meta">
-            <div class="meta-row">
-              <span class="meta-label">Protocol contents</span>
-              <span class="meta-label">Bundle price</span>
-            </div>
-            <div class="meta-row meta-values">
-              <span class="meta-value-text">Three-part stack</span>
-              <span class="meta-price">$269</span>
-            </div>
-          </div>
-          <div class="stack-items">
-            <div class="stack-item">
-              <div class="stack-top">
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span class="stack-name">NAD+</span>
-              </div>
-              <p class="stack-desc">The central visual and messaging anchor for the page, supporting the energy, cellular, and premium optimization narrative.</p>
-            </div>
-            <div class="stack-item">
-              <div class="stack-top">
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span class="stack-name">MOTS-c</span>
-              </div>
-              <p class="stack-desc">Adds depth to the offer and makes the stack feel more performance-minded for serious optimization customers.</p>
-            </div>
-            <div class="stack-item">
-              <div class="stack-top">
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span class="stack-name">Optional Add-On: GHK-Cu</span>
-              </div>
-              <p class="stack-desc">A premium cross-sell that broadens the routine and lifts average order value while keeping the page visually minimal.</p>
-            </div>
-          </div>
-          <div class="addon-card">
-            <div class="addon-label">Recommended add-on</div>
-            <div class="addon-row">
-              <span class="addon-text">Add GHK-Cu to complete the daily stack</span>
-              <span class="addon-price">$59</span>
-            </div>
-          </div>
-          <div class="protocol-ctas">
-            <button class="btn-primary btn-full">Add Protocol to Cart</button>
-            <button class="btn-outline">View COA</button>
-          </div>
-        </div>
+  <!-- Performance Projections -->
+  <section class="perf-section">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:14px">
+      <div class="perf-header">
+        <div class="section-eyebrow" style="margin-bottom:6px">Clinical Data</div>
+        <div class="perf-h2">Performance Projections</div>
+        <p class="perf-sub">Expected metrics observed in phase-III clinical trials under controlled biological variables.</p>
       </div>
-    </section>
-  </div>
+      <div class="perf-warning">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        Requires Medical Clearance
+      </div>
+    </div>
+    <div class="perf-grid">
+      <div class="perf-stat">
+        <div class="perf-stat-label">Bio-Energy</div>
+        <div class="perf-stat-val">34<sup>%*</sup></div>
+        <div class="perf-stat-name">ATP Production</div>
+      </div>
+      <div class="perf-stat">
+        <div class="perf-stat-label">Genomic Integrity</div>
+        <div class="perf-stat-val">18<sup>%*</sup></div>
+        <div class="perf-stat-name">DNA Repair Efficiency</div>
+      </div>
+      <div class="perf-stat">
+        <div class="perf-stat-label">Metabolic Control</div>
+        <div class="perf-stat-val">22<sup>%*</sup></div>
+        <div class="perf-stat-name">Glycemic Stability</div>
+      </div>
+    </div>
+  </section>
 
-  <!-- LEAN PROTOCOL PAGE -->
-  <div id="page-lean" class="page">
-    <section class="protocol-page">
-      <div class="protocol-layout">
-        <div class="protocol-left card">
-          <div class="tag">Body composition protocol</div>
-          <h1>Lean Protocol</h1>
-          <p class="protocol-desc">A streamlined stack designed for customers focused on dialing in body composition while staying sharp, consistent, and visually on point.</p>
-          <div class="feature-boxes">
-            <div class="feature-box">Metabolic support</div>
-            <div class="feature-box">Clean energy angle</div>
-            <div class="feature-box">Premium body composition offer</div>
+  <!-- Active Molecular Stack -->
+  <section class="stack-section">
+    <h2>Active Molecular Stack</h2>
+    <p>Curated compounds with verified sourcing, pharmaceutical-grade purity, and protocol-specific delivery mechanisms.</p>
+    <div class="molecular-grid">
+      <div class="mol-card">
+        <div class="mol-image nad">
+          <div class="mol-image-inner">
+            <div class="mol-viz"></div>
           </div>
-          <div class="why-card">
-            <div class="why-label">WHY THIS PAGE WORKS</div>
-            <p>Built for creators, athletes, and high-discipline buyers who want a cleaner way to shop for a body-composition-focused protocol.</p>
-            <p>It leads with one clear goal, one clear stack, and one clear CTA instead of forcing visitors through a huge catalog first.</p>
-            <p>The trust layer sits directly next to the purchase path so customers can validate the brand without losing momentum.</p>
+          <div class="mol-name-overlay">
+            <div class="mol-name">NAD+ Booster</div>
           </div>
         </div>
-        <div class="protocol-right card">
-          <div class="featured-label">FEATURED PROTOCOL</div>
-          <div class="featured-header">
-            <h2>Lean Protocol</h2>
-            <span class="featured-badge">Best seller</span>
+        <div class="mol-body">
+          <div class="mol-attr">
+            <div class="mol-attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div><strong>Pharmaceutical Grade VA</strong>Sourced through enzymatic synthesis with 99.4% purity verification.</div>
           </div>
-          <div class="protocol-meta">
-            <div class="meta-row">
-              <span class="meta-label">Protocol contents</span>
-              <span class="meta-label">Bundle price</span>
-            </div>
-            <div class="meta-row meta-values">
-              <span class="meta-value-text">Three-part stack</span>
-              <span class="meta-price">$249</span>
-            </div>
-          </div>
-          <div class="stack-items">
-            <div class="stack-item">
-              <div class="stack-top">
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span class="stack-name">MOTS-c</span>
-              </div>
-              <p class="stack-desc">Positioned as the metabolic anchor of the stack. Premium presentation with simple language and clean product visuals.</p>
-            </div>
-            <div class="stack-item">
-              <div class="stack-top">
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span class="stack-name">NAD+</span>
-              </div>
-              <p class="stack-desc">Supports the premium longevity-meets-performance angle and increases perceived sophistication of the bundle.</p>
-            </div>
-            <div class="stack-item">
-              <div class="stack-top">
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span class="stack-name">Optional Add-On: GHK-Cu</span>
-              </div>
-              <p class="stack-desc">A smaller add-on that boosts cart size and makes the protocol feel more complete without adding friction.</p>
-            </div>
-          </div>
-          <div class="addon-card">
-            <div class="addon-label">Recommended add-on</div>
-            <div class="addon-row">
-              <span class="addon-text">Add GHK-Cu for a premium support layer</span>
-              <span class="addon-price">$59</span>
-            </div>
-          </div>
-          <div class="protocol-ctas">
-            <button class="btn-primary btn-full">Add Protocol to Cart</button>
-            <button class="btn-outline">View COA</button>
+          <div class="mol-attr">
+            <div class="mol-attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div><strong>Sublingual Micro-Delivery</strong>Enhanced bioavailability through mucosal absorption pathways.</div>
           </div>
         </div>
       </div>
-    </section>
-  </div>
-
-  <!-- RECOVERY PROTOCOL PAGE -->
-  <div id="page-recovery" class="page">
-    <section class="protocol-page">
-      <div class="protocol-layout">
-        <div class="protocol-left card">
-          <div class="tag">Repair + recovery protocol</div>
-          <h1>Recovery Protocol</h1>
-          <p class="protocol-desc">A focused stack for customers who care about staying active, bouncing back faster, and keeping their training rhythm intact.</p>
-          <div class="feature-boxes">
-            <div class="feature-box">Recovery-first framing</div>
-            <div class="feature-box">Training continuity angle</div>
-            <div class="feature-box">Fast reorder potential</div>
+      <div class="mol-card">
+        <div class="mol-image motsc">
+          <div class="mol-image-inner">
+            <div class="mol-viz gold"></div>
           </div>
-          <div class="why-card">
-            <div class="why-label">WHY THIS PAGE WORKS</div>
-            <p>Designed to feel clean, premium, and purpose-driven for customers coming from fitness and wellness creators talking about recovery.</p>
-            <p>It leads with one clear goal, one clear stack, and one clear CTA instead of forcing visitors through a huge catalog first.</p>
-            <p>The trust layer sits directly next to the purchase path so customers can validate the brand without losing momentum.</p>
+          <div class="mol-name-overlay">
+            <div class="mol-name">MOTS-c</div>
           </div>
         </div>
-        <div class="protocol-right card">
-          <div class="featured-label">FEATURED PROTOCOL</div>
-          <div class="featured-header">
-            <h2>Recovery Protocol</h2>
-            <span class="featured-badge">High repeat</span>
+        <div class="mol-body">
+          <div class="mol-attr">
+            <div class="mol-attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div><strong>Mitochondrial Peptide Anchor</strong>Synthetic analogue of the mitochondria-derived hormone.</div>
           </div>
-          <div class="protocol-meta">
-            <div class="meta-row">
-              <span class="meta-label">Protocol contents</span>
-              <span class="meta-label">Bundle price</span>
-            </div>
-            <div class="meta-row meta-values">
-              <span class="meta-value-text">Three-part stack</span>
-              <span class="meta-price">$229</span>
-            </div>
+          <div class="mol-attr">
+            <div class="mol-attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div><strong>Subcutaneous Protocol</strong>Timed-release mechanism for sustained metabolic upregulation.</div>
           </div>
-          <div class="stack-items">
-            <div class="stack-item">
-              <div class="stack-top">
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span class="stack-name">BPC-157</span>
-              </div>
-              <p class="stack-desc">Placed as the centerpiece of the recovery offer with clean packaging language and strong trust-first presentation.</p>
-            </div>
-            <div class="stack-item">
-              <div class="stack-top">
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span class="stack-name">TB-500</span>
-              </div>
-              <p class="stack-desc">Supports the movement, resilience, and recovery angle while increasing the perceived completeness of the protocol.</p>
-            </div>
-            <div class="stack-item">
-              <div class="stack-top">
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span class="stack-name">Optional Add-On: NAD+</span>
-              </div>
-              <p class="stack-desc">Raises average order value by giving customers a broader performance and recovery story beyond the core stack.</p>
-            </div>
-          </div>
-          <div class="addon-card">
-            <div class="addon-label">Recommended add-on</div>
-            <div class="addon-row">
-              <span class="addon-text">Add NAD+ for broader daily support</span>
-              <span class="addon-price">$59</span>
-            </div>
-          </div>
-          <div class="protocol-ctas">
-            <button class="btn-primary btn-full">Add Protocol to Cart</button>
-            <button class="btn-outline">View COA</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- CATALOG PAGE -->
-  <div id="page-catalog" class="page">
-    <section class="catalog-section">
-      <div class="catalog-inner">
-        <div class="catalog-header">
-          <div class="tag">Full compound library</div>
-          <h1>Compound Catalog</h1>
-          <p>Every compound Pur carries — tested, verified, and clearly explained.</p>
-        </div>
-        <div class="catalog-grid">
-          <div class="catalog-item card">
-            <div class="catalog-top">
-              <span class="catalog-category">Cellular energy</span>
-              <span class="catalog-price">$89</span>
-            </div>
-            <h3>NAD+</h3>
-            <p>Nicotinamide adenine dinucleotide. Supports mitochondrial function, cellular repair, and sustained energy production.</p>
-            <div class="catalog-tags">
-              <span class="compound-tag">Energy</span>
-              <span class="compound-tag">Longevity</span>
-              <span class="compound-tag">Cellular</span>
-            </div>
-            <button class="btn-primary btn-sm">Add to Cart</button>
-          </div>
-          <div class="catalog-item card">
-            <div class="catalog-top">
-              <span class="catalog-category">Metabolic support</span>
-              <span class="catalog-price">$99</span>
-            </div>
-            <h3>MOTS-c</h3>
-            <p>A mitochondria-derived peptide that regulates metabolic function and supports body composition goals.</p>
-            <div class="catalog-tags">
-              <span class="compound-tag">Metabolism</span>
-              <span class="compound-tag">Body comp</span>
-              <span class="compound-tag">Performance</span>
-            </div>
-            <button class="btn-primary btn-sm">Add to Cart</button>
-          </div>
-          <div class="catalog-item card">
-            <div class="catalog-top">
-              <span class="catalog-category">Repair + recovery</span>
-              <span class="catalog-price">$89</span>
-            </div>
-            <h3>BPC-157</h3>
-            <p>Body Protection Compound 157. Widely used for tissue repair, joint support, and recovery between training sessions.</p>
-            <div class="catalog-tags">
-              <span class="compound-tag">Recovery</span>
-              <span class="compound-tag">Repair</span>
-              <span class="compound-tag">Joints</span>
-            </div>
-            <button class="btn-primary btn-sm">Add to Cart</button>
-          </div>
-          <div class="catalog-item card">
-            <div class="catalog-top">
-              <span class="catalog-category">Resilience</span>
-              <span class="catalog-price">$79</span>
-            </div>
-            <h3>TB-500</h3>
-            <p>Thymosin Beta-4 fragment. Supports tissue regeneration, flexibility, and athletic resilience.</p>
-            <div class="catalog-tags">
-              <span class="compound-tag">Regeneration</span>
-              <span class="compound-tag">Flexibility</span>
-              <span class="compound-tag">Athletic</span>
-            </div>
-            <button class="btn-primary btn-sm">Add to Cart</button>
-          </div>
-          <div class="catalog-item card">
-            <div class="catalog-top">
-              <span class="catalog-category">Skin + tissue</span>
-              <span class="catalog-price">$59</span>
-            </div>
-            <h3>GHK-Cu</h3>
-            <p>Copper peptide complex. Supports collagen synthesis, skin quality, and tissue remodeling.</p>
-            <div class="catalog-tags">
-              <span class="compound-tag">Collagen</span>
-              <span class="compound-tag">Skin</span>
-              <span class="compound-tag">Remodeling</span>
-            </div>
-            <button class="btn-primary btn-sm">Add to Cart</button>
-          </div>
-          <div class="catalog-item card">
-            <div class="catalog-top">
-              <span class="catalog-category">Cognitive + mood</span>
-              <span class="catalog-price">$79</span>
-            </div>
-            <h3>Selank</h3>
-            <p>A synthetic peptide derived from tuftsin. Supports cognitive clarity, stress response, and stable mood.</p>
-            <div class="catalog-tags">
-              <span class="compound-tag">Cognitive</span>
-              <span class="compound-tag">Stress</span>
-              <span class="compound-tag">Mood</span>
-            </div>
-            <button class="btn-primary btn-sm">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- SCIENCE PAGE -->
-  <div id="page-science" class="page">
-    <section class="science-section">
-      <div class="science-inner">
-        <div class="catalog-header">
-          <div class="tag">The science behind Pur</div>
-          <h1>Research-backed compounds.</h1>
-          <p>Every compound we carry has been selected based on peer-reviewed research and third-party testing protocols.</p>
-        </div>
-        <div class="science-grid">
-          <div class="science-card card">
-            <div class="science-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
-            </div>
-            <h3>US Lab Sourced</h3>
-            <p>All compounds are manufactured in FDA-registered, GMP-compliant US facilities with rigorous quality standards.</p>
-          </div>
-          <div class="science-card card">
-            <div class="science-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h3>Third-Party Tested</h3>
-            <p>Every batch is independently tested for purity, potency, and safety. Certificates of Analysis available for all products.</p>
-          </div>
-          <div class="science-card card">
-            <div class="science-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-            </div>
-            <h3>Peer-Reviewed Selection</h3>
-            <p>Our compound library is curated based on clinical studies and emerging research from leading longevity and performance scientists.</p>
-          </div>
-          <div class="science-card card">
-            <div class="science-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/></svg>
-            </div>
-            <h3>Protocol-First Approach</h3>
-            <p>We don't just sell compounds — we design stacks that work synergistically based on your specific performance or health goal.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- AFFILIATES PAGE -->
-  <div id="page-affiliates" class="page">
-    <section class="affiliates-section">
-      <div class="affiliates-inner">
-        <div class="catalog-header">
-          <div class="tag">Partner with Pur</div>
-          <h1>Built for creators who care.</h1>
-          <p>The Pur affiliate program is designed for fitness creators, biohackers, and performance coaches who want to promote a brand that matches their standard.</p>
-        </div>
-        <div class="affiliates-grid">
-          <div class="affiliate-card card">
-            <div class="affiliate-pct">20%</div>
-            <h3>Commission per sale</h3>
-            <p>One of the highest rates in the peptide and performance supplement space.</p>
-          </div>
-          <div class="affiliate-card card">
-            <div class="affiliate-pct">30d</div>
-            <h3>Cookie window</h3>
-            <p>Long attribution window so you get credited for every customer you send, even days later.</p>
-          </div>
-          <div class="affiliate-card card">
-            <div class="affiliate-pct">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            </div>
-            <h3>Custom protocol pages</h3>
-            <p>Get your own co-branded protocol landing pages tailored to your audience and niche.</p>
-          </div>
-        </div>
-        <div style="text-align:center;margin-top:40px;">
-          <button class="btn-primary" style="font-size:1rem;padding:16px 40px;">Apply to Partner</button>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- ACCOUNT PAGE -->
-  <div id="page-account" class="page">
-    <section class="account-section">
-      <div class="account-inner">
-        <div class="account-card card">
-          <div class="tag">Your account</div>
-          <h1>Welcome back.</h1>
-          <p>Manage your orders, subscriptions, and protocol history from one place.</p>
-          <div class="account-form">
-            <div class="form-group">
-              <label>Email address</label>
-              <input type="email" placeholder="you@example.com" class="form-input" />
-            </div>
-            <div class="form-group">
-              <label>Password</label>
-              <input type="password" placeholder="••••••••" class="form-input" />
-            </div>
-            <button class="btn-primary btn-full" style="margin-top:8px;">Sign In</button>
-            <p class="form-link">Don't have an account? <a href="#">Create one</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <span class="logo">Pur.</span>
-        <p>Precision compounds for performance and longevity.</p>
-      </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <h4>Protocols</h4>
-          <a href="#" data-page="longevity">Longevity</a>
-          <a href="#" data-page="lean">Lean</a>
-          <a href="#" data-page="recovery">Recovery</a>
-        </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <a href="#" data-page="science">Science</a>
-          <a href="#" data-page="affiliates">Affiliates</a>
-          <a href="#" data-page="catalog">Catalog</a>
-        </div>
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">COA Library</a>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Pur Peptides. All rights reserved. These statements have not been evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease.</p>
-    </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- Systemic Optimization -->
+  <section class="systemic-section">
+    <div class="section-eyebrow" style="margin-bottom:8px">Mechanism Overview</div>
+    <h2>Systemic Optimization</h2>
+    <p>Our atelier approach ensures that every biological pathway is addressed with clinical precision.</p>
+    <div class="systemic-grid">
+      <div class="sys-card">
+        <div class="sys-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div class="sys-title">Neuro-Preservation</div>
+        <p class="sys-desc">Enhancement of synaptic plasticity and neuro-protective shielding of the prefrontal cortex.</p>
+      </div>
+      <div class="sys-card">
+        <div class="sys-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/></svg>
+        </div>
+        <div class="sys-title">Physical Resilience</div>
+        <p class="sys-desc">Accelerated myostatin inhibition and collagen fiber density optimization for structural integrity.</p>
+      </div>
+      <div class="sys-card">
+        <div class="sys-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <div class="sys-title">Metabolic Stability</div>
+        <p class="sys-desc">Recalibration of the hormonal axis to support basal metabolic homeostasis and insulin sensitivity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Protocol order + FAQ in two-col -->
+  <div class="protocol-layout">
+    <div>
+      <!-- FAQ -->
+      <section class="faq-section" style="padding:0 0 0">
+        <h2>Protocol Inquiry Analysis</h2>
+        <div class="faq-list">
+          <div class="faq-item open">
+            <button class="faq-question">
+              What is the titration schedule for the NAD+ component?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              Titration begins at 250mg daily for Week 1, escalating to 500mg in Week 2, and stabilizing at 750mg for the remainder of the induction phase. This minimizes the potential for NAD+ flushing and allows for enzymatic adaptation.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Are there contraindications with existing peptides?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              No direct contraindications have been identified with BPC-157, TB-500, or GHK-Cu. However, stacking with exogenous growth hormone analogues requires medical supervision and adjusted dosing intervals.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              How often is biological monitoring required?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              Baseline biomarker panel recommended prior to initiation. Follow-up panels at Week 4 and Week 8 to monitor NAD+/NADH ratio, inflammatory markers (IL-6, CRP), and metabolic panel (HbA1c, fasting insulin).
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What storage protocol is required?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              Lyophilized powder: store at -20°C, stable for 24 months. Reconstituted solution: refrigerate at 4°C, use within 28 days. Protect from light. Bacteriostatic water recommended for reconstitution.
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Order card -->
+    <div>
+      <div class="order-card">
+        <div class="oc-protocol-label">Featured Protocol</div>
+        <div class="oc-title">Longevity Protocol 01</div>
+        <div class="oc-meta">
+          <div class="oc-meta-row">
+            <span class="oc-meta-label">Contents</span>
+            <span class="oc-meta-label">Bundle price</span>
+          </div>
+          <div class="oc-meta-row">
+            <span class="oc-meta-val">Three-part stack</span>
+            <span class="oc-price">$269</span>
+          </div>
+        </div>
+        <div class="stack-list">
+          <div class="stack-item active">
+            <div class="si-top">
+              <div class="si-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <span class="si-name">NAD+ Booster</span>
+            </div>
+            <p class="si-desc">Cellular energy anchor. Mitochondrial ATP synthesis and sirtuin pathway activation.</p>
+          </div>
+          <div class="stack-item active">
+            <div class="si-top">
+              <div class="si-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <span class="si-name">MOTS-c</span>
+            </div>
+            <p class="si-desc">Mitochondria-derived peptide. AMPK activation for sustained metabolic regulation.</p>
+          </div>
+          <div class="stack-item">
+            <div class="si-top">
+              <div class="si-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <span class="si-name">GHK-Cu (Optional)</span>
+            </div>
+            <p class="si-desc">Copper peptide for collagen synthesis and tissue remodeling.</p>
+          </div>
+        </div>
+        <div class="addon-card">
+          <div class="addon-label">Recommended add-on</div>
+          <div class="addon-row">
+            <span class="addon-name">GHK-Cu — Complete the stack</span>
+            <span class="addon-price">+$59</span>
+          </div>
+        </div>
+        <div class="ctas-row">
+          <button class="btn-green full">Initiate Protocol</button>
+          <button class="btn-outline">View COA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- LEAN PROTOCOL                           -->
+<!-- ═══════════════════════════════════════ -->
+<div id="page-lean" class="page">
+  <section class="protocol-hero-full">
+    <div class="phf-grid-bg"></div>
+    <div class="phf-glow"></div>
+    <div class="phf-content">
+      <div class="phf-badge"><span class="tag">Body Composition Series</span></div>
+      <h1 class="phf-h1">Lean Mass<br>Protocol 02</h1>
+      <div class="phf-ctas">
+        <button class="btn-green">Initiate Protocol <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+        <button class="btn-ghost">View Research Paper</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="protocol-stats-bar">
+    <div class="psb-inner">
+      <div class="psb-item"><div class="psb-label">Duration</div><div class="psb-value">8 Weeks</div></div>
+      <div class="psb-item"><div class="psb-label">Intensity</div><div class="psb-value">Intermediate</div></div>
+      <div class="psb-item"><div class="psb-label">Phase</div><div class="psb-value">Recomposition</div></div>
+      <div class="psb-item"><div class="psb-label">Focus</div><div class="psb-value">AMPK / Metabolism</div></div>
+    </div>
+  </div>
+
+  <section class="perf-section">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:14px">
+      <div class="perf-header">
+        <div class="section-eyebrow" style="margin-bottom:6px">Clinical Data</div>
+        <div class="perf-h2">Performance Projections</div>
+        <p class="perf-sub">Expected metrics under controlled body composition intervention protocols.</p>
+      </div>
+      <div class="perf-warning"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Requires Medical Clearance</div>
+    </div>
+    <div class="perf-grid">
+      <div class="perf-stat"><div class="perf-stat-label">Metabolic Output</div><div class="perf-stat-val">41<sup>%*</sup></div><div class="perf-stat-name">AMPK Activation</div></div>
+      <div class="perf-stat"><div class="perf-stat-label">Body Composition</div><div class="perf-stat-val">28<sup>%*</sup></div><div class="perf-stat-name">Fat Oxidation Rate</div></div>
+      <div class="perf-stat"><div class="perf-stat-label">Anabolic Index</div><div class="perf-stat-val">19<sup>%*</sup></div><div class="perf-stat-name">Lean Mass Retention</div></div>
+    </div>
+  </section>
+
+  <section class="stack-section">
+    <h2>Active Molecular Stack</h2>
+    <p>Lean Protocol compounds selected for metabolic synergy and body composition specificity.</p>
+    <div class="molecular-grid">
+      <div class="mol-card">
+        <div class="mol-image motsc"><div class="mol-image-inner"><div class="mol-viz gold"></div></div><div class="mol-name-overlay"><div class="mol-name">MOTS-c</div></div></div>
+        <div class="mol-body">
+          <div class="mol-attr"><div class="mol-attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Metabolic Peptide Anchor</strong>AMPK pathway activator — primary driver of fat oxidation and glucose regulation.</div></div>
+          <div class="mol-attr"><div class="mol-attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Subcutaneous Protocol</strong>Timed-release mechanism for sustained metabolic upregulation.</div></div>
+        </div>
+      </div>
+      <div class="mol-card">
+        <div class="mol-image nad"><div class="mol-image-inner"><div class="mol-viz"></div></div><div class="mol-name-overlay"><div class="mol-name">NAD+ Booster</div></div></div>
+        <div class="mol-body">
+          <div class="mol-attr"><div class="mol-attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Energy Substrate Amplifier</strong>Increases NAD+/NADH ratio to maximize training output and cellular endurance.</div></div>
+          <div class="mol-attr"><div class="mol-attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Pharmaceutical Grade VA</strong>99.4% purity — sublingual micro-delivery for rapid uptake.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="protocol-layout">
+    <div>
+      <section class="faq-section" style="padding:0">
+        <h2>Protocol Inquiry Analysis</h2>
+        <div class="faq-list">
+          <div class="faq-item open">
+            <button class="faq-question">What is the optimal timing for MOTS-c administration?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="faq-answer">Subcutaneous injection 30-45 minutes pre-training for maximum AMPK activation during the workout window. On rest days, administer in the morning in a fasted state to support basal metabolic rate elevation.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Can this stack be used during a caloric deficit?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="faq-answer">Yes. The Lean Protocol is specifically designed for hypocaloric environments. MOTS-c's AMPK activation promotes fat utilization while preserving lean mass — making it particularly effective during structured cut phases.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">What biomarkers should be tracked?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="faq-answer">Baseline and weekly: fasting insulin, HOMA-IR, fasting glucose. Monthly: HbA1c, comprehensive metabolic panel, DEXA or bioimpedance for body composition tracking.</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <div class="order-card">
+        <div class="oc-protocol-label">Featured Protocol</div>
+        <div class="oc-title">Lean Protocol 02</div>
+        <div class="oc-meta">
+          <div class="oc-meta-row"><span class="oc-meta-label">Contents</span><span class="oc-meta-label">Bundle price</span></div>
+          <div class="oc-meta-row"><span class="oc-meta-val">Three-part stack</span><span class="oc-price">$249</span></div>
+        </div>
+        <div class="stack-list">
+          <div class="stack-item active"><div class="si-top"><div class="si-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="si-name">MOTS-c</span></div><p class="si-desc">Metabolic anchor. AMPK activation for body composition.</p></div>
+          <div class="stack-item active"><div class="si-top"><div class="si-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="si-name">NAD+ Booster</span></div><p class="si-desc">Energy substrate. Maximizes cellular output during training.</p></div>
+          <div class="stack-item"><div class="si-top"><div class="si-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="si-name">GHK-Cu (Optional)</span></div><p class="si-desc">Collagen support add-on for connective tissue health.</p></div>
+        </div>
+        <div class="addon-card"><div class="addon-label">Recommended add-on</div><div class="addon-row"><span class="addon-name">GHK-Cu — Structural support</span><span class="addon-price">+$59</span></div></div>
+        <div class="ctas-row"><button class="btn-green full">Initiate Protocol</button><button class="btn-outline">View COA</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- RECOVERY PROTOCOL                       -->
+<!-- ═══════════════════════════════════════ -->
+<div id="page-recovery" class="page">
+  <section class="protocol-hero-full">
+    <div class="phf-grid-bg"></div>
+    <div class="phf-glow"></div>
+    <div class="phf-content">
+      <div class="phf-badge"><span class="tag">Repair + Resilience Series</span></div>
+      <h1 class="phf-h1">Deep Recovery<br>Protocol 03</h1>
+      <div class="phf-ctas">
+        <button class="btn-green">Initiate Protocol <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+        <button class="btn-ghost">View Research Paper</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="protocol-stats-bar">
+    <div class="psb-inner">
+      <div class="psb-item"><div class="psb-label">Duration</div><div class="psb-value">10 Weeks</div></div>
+      <div class="psb-item"><div class="psb-label">Intensity</div><div class="psb-value">Moderate</div></div>
+      <div class="psb-item"><div class="psb-label">Phase</div><div class="psb-value">Repair</div></div>
+      <div class="psb-item"><div class="psb-label">Focus</div><div class="psb-value">Musculotendinous</div></div>
+    </div>
+  </div>
+
+  <section class="perf-section">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:14px">
+      <div class="perf-header">
+        <div class="section-eyebrow" style="margin-bottom:6px">Clinical Data</div>
+        <div class="perf-h2">Performance Projections</div>
+        <p class="perf-sub">Tissue repair and resilience metrics from phase-II controlled observations.</p>
+      </div>
+      <div class="perf-warning"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Requires Medical Clearance</div>
+    </div>
+    <div class="perf-grid">
+      <div class="perf-stat"><div class="perf-stat-label">Repair Rate</div><div class="perf-stat-val">47<sup>%*</sup></div><div class="perf-stat-name">Tissue Recovery</div></div>
+      <div class="perf-stat"><div class="perf-stat-label">Angiogenesis</div><div class="perf-stat-val">31<sup>%*</sup></div><div class="perf-stat-name">Vascular Repair</div></div>
+      <div class="perf-stat"><div class="perf-stat-label">Resilience Index</div><div class="perf-stat-val">26<sup>%*</sup></div><div class="perf-stat-name">Training Continuity</div></div>
+    </div>
+  </section>
+
+  <section class="stack-section">
+    <h2>Active Molecular Stack</h2>
+    <p>Repair-first compounds at clinical concentrations for tissue resilience and training continuity.</p>
+    <div class="molecular-grid">
+      <div class="mol-card">
+        <div class="mol-image bpc"><div class="mol-image-inner"><div class="mol-viz blue"></div></div><div class="mol-name-overlay"><div class="mol-name">BPC-157</div></div></div>
+        <div class="mol-body">
+          <div class="mol-attr"><div class="mol-attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Cytoprotective Anchor</strong>Pentadecapeptide with direct angiogenic and tissue repair mechanisms.</div></div>
+          <div class="mol-attr"><div class="mol-attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Subcutaneous / Oral</strong>Dual-route administration for systemic and local repair response.</div></div>
+        </div>
+      </div>
+      <div class="mol-card">
+        <div class="mol-image tb500"><div class="mol-image-inner"><div class="mol-viz purple"></div></div><div class="mol-name-overlay"><div class="mol-name">TB-500</div></div></div>
+        <div class="mol-body">
+          <div class="mol-attr"><div class="mol-attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Cell Migration Activator</strong>Thymosin-β4 fragment promotes tissue remodeling and systemic flexibility.</div></div>
+          <div class="mol-attr"><div class="mol-attr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Subcutaneous Protocol</strong>Timed-release for sustained repair cycle across the 10-week program.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="protocol-layout">
+    <div>
+      <section class="faq-section" style="padding:0">
+        <h2>Protocol Inquiry Analysis</h2>
+        <div class="faq-list">
+          <div class="faq-item open">
+            <button class="faq-question">How should BPC-157 and TB-500 be co-administered?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="faq-answer">Administer separately, 4-6 hours apart to prevent competitive receptor binding. BPC-157 is recommended in the morning post-training. TB-500 is optimized for evening administration to leverage overnight repair cycles.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Can this protocol address chronic injury sites?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="faq-answer">Yes. Local injection proximal to the injury site (in addition to systemic subcutaneous administration) has shown enhanced response rates in tendon and ligament repair studies. Consult with your medical provider for localized injection protocols.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">What is the recommended cycle length?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="faq-answer">Standard protocol is 10 weeks on, 4-6 weeks off. For acute injury, a focused 6-week high-frequency cycle followed by a maintenance dose is recommended. Long-term continuous use beyond 16 weeks is not advised without biomarker monitoring.</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <div class="order-card">
+        <div class="oc-protocol-label">Featured Protocol</div>
+        <div class="oc-title">Recovery Protocol 03</div>
+        <div class="oc-meta">
+          <div class="oc-meta-row"><span class="oc-meta-label">Contents</span><span class="oc-meta-label">Bundle price</span></div>
+          <div class="oc-meta-row"><span class="oc-meta-val">Three-part stack</span><span class="oc-price">$229</span></div>
+        </div>
+        <div class="stack-list">
+          <div class="stack-item active"><div class="si-top"><div class="si-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="si-name">BPC-157</span></div><p class="si-desc">Cytoprotective repair anchor. Angiogenic and tissue-regenerative.</p></div>
+          <div class="stack-item active"><div class="si-top"><div class="si-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="si-name">TB-500</span></div><p class="si-desc">Cell migration and flexibility. Systemic resilience support.</p></div>
+          <div class="stack-item"><div class="si-top"><div class="si-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="si-name">NAD+ (Optional)</span></div><p class="si-desc">Cellular energy support for broader recovery narrative.</p></div>
+        </div>
+        <div class="addon-card"><div class="addon-label">Recommended add-on</div><div class="addon-row"><span class="addon-name">NAD+ — Broader daily support</span><span class="addon-price">+$59</span></div></div>
+        <div class="ctas-row"><button class="btn-green full">Initiate Protocol</button><button class="btn-outline">View COA</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- CATALOG                                 -->
+<!-- ═══════════════════════════════════════ -->
+<div id="page-catalog" class="page">
+  <div class="catalog-wrapper">
+
+    <!-- Sidebar -->
+    <aside class="catalog-sidebar">
+      <div class="sidebar-label">Inventory Filter</div>
+      <nav class="sidebar-nav">
+        <div class="sidebar-link active" data-filter="all"><span class="sidebar-dot"></span>All Fractions</div>
+        <div class="sidebar-link" data-filter="peptides"><span class="sidebar-dot"></span>Peptides</div>
+        <div class="sidebar-link" data-filter="neuro"><span class="sidebar-dot"></span>Neuro-cognitive</div>
+        <div class="sidebar-link" data-filter="longevity"><span class="sidebar-dot"></span>Longevity</div>
+        <div class="sidebar-link" data-filter="synthesis"><span class="sidebar-dot"></span>Synthesis Kits</div>
+      </nav>
+
+      <div class="sidebar-label">Purity Grade</div>
+      <div class="sidebar-check-group">
+        <label class="sidebar-check"><input type="checkbox" checked /> 99.9% Analytical</label>
+        <label class="sidebar-check"><input type="checkbox" /> Research Grade V4</label>
+      </div>
+
+      <div class="sidebar-disclaimer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+        <p>All compounds are strictly for laboratory research synthesis. Verify institutional credentials in portal.</p>
+      </div>
+    </aside>
+
+    <!-- Main catalog content -->
+    <main class="catalog-main">
+      <div class="catalog-top-bar">
+        <div>
+          <h1 class="catalog-headline">Molecular Curation</h1>
+          <p class="catalog-subtitle">Research Inventory 2026 — A curated selection of high-fidelity bioactive peptides and synthetic precursors for advanced clinical inquiry.</p>
+        </div>
+        <div class="sort-control">
+          <span class="sort-label">Sort By</span>
+          <select class="sort-select">
+            <option>Sequence Complexity</option>
+            <option>Purity Grade</option>
+            <option>Price: Low–High</option>
+            <option>Price: High–Low</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Featured item -->
+      <div class="catalog-featured">
+        <div class="cf-image">
+          <div class="cf-image-inner"><div class="cf-viz"></div></div>
+          <div class="cf-badge-overlay">
+            <span class="badge badge-red">Restricted Access</span>
+          </div>
+        </div>
+        <div class="cf-body">
+          <div>
+            <div class="cf-id">Compound Reference #SA-09</div>
+            <div class="cf-name">Synth-Alpha 09</div>
+            <div class="cf-type">Experimental Peptide Sequence</div>
+          </div>
+          <p class="cf-desc">The pinnacle of our 2026 synthesis run. Synth-Alpha 09 represents a breakthrough in cellular resilience protocols. Documentation requires Level 4 clearance.</p>
+          <div class="cf-price-row">
+            <div>
+              <div class="cf-price-label">Curation Price</div>
+              <div class="cf-price">$1,840.00</div>
+            </div>
+            <button class="btn-inquire">Inquire Specification <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product grid -->
+      <div class="catalog-grid" id="catalog-grid">
+
+        <div class="catalog-card" data-categories="metabolic,longevity">
+          <div class="cc-image cat-metabolic">
+            <div class="cc-viz-sm"></div>
+            <button class="cart-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></button>
+          </div>
+          <div class="cc-body">
+            <div class="cc-name-row"><span class="cc-name">Catalyst C-14</span><span class="cc-price">$420.00</span></div>
+            <div class="cc-category">Metabolic Optimization</div>
+            <p class="cc-desc">High-purity metabolic cofactor designed for mitochondrial efficiency enhancement and substrate utilization.</p>
+            <div class="cc-actions">
+              <button class="btn-inquire" style="font-size:0.65rem;padding:7px 12px">Inquire Specification <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-card" data-categories="neuro,peptides">
+          <div class="cc-image cat-genetic">
+            <div class="cc-viz-sm" style="background:radial-gradient(circle,rgba(184,74,63,0.2) 0%,transparent 70%)"></div>
+            <button class="cart-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></button>
+          </div>
+          <div class="cc-body">
+            <div class="cc-name-row"><span class="cc-name">Nucleus Binder</span><span class="cc-price">$680.00</span></div>
+            <div class="cc-category">Genetic Interface</div>
+            <p class="cc-desc">Advanced molecular scaffold optimized for nucleic acid binding and gene expression modulation.</p>
+            <div class="cc-actions">
+              <button class="btn-inquire" style="font-size:0.65rem;padding:7px 12px">Inquire Specification <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-card" data-categories="longevity,peptides">
+          <div class="cc-image cat-luminescent">
+            <div class="cc-viz-sm" style="background:radial-gradient(circle,rgba(60,140,160,0.2) 0%,transparent 70%)"></div>
+            <button class="cart-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></button>
+          </div>
+          <div class="cc-body">
+            <div class="cc-name-row"><span class="cc-name">Bio-Lume Reactant</span><span class="cc-price">$315.00</span></div>
+            <div class="cc-category">Luminescent Tracer</div>
+            <p class="cc-desc">Precision tracing agent for real-time observation of biosynthetic pathways and cellular uptake kinetics.</p>
+            <div class="cc-actions">
+              <button class="btn-inquire" style="font-size:0.65rem;padding:7px 12px">Inquire Specification <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-card" data-categories="longevity,peptides">
+          <div class="cc-image cat-longevity">
+            <div class="cc-viz-sm"></div>
+            <button class="cart-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></button>
+          </div>
+          <div class="cc-body">
+            <div class="cc-name-row"><span class="cc-name">NAD+ Booster</span><span class="cc-price">$89.00</span></div>
+            <div class="cc-category">Cellular Energy · Longevity</div>
+            <p class="cc-desc">Nicotinamide adenine dinucleotide. Critical coenzyme for ATP synthesis, DNA repair, and sirtuin activation.</p>
+            <div class="cc-actions">
+              <button class="btn-inquire" style="font-size:0.65rem;padding:7px 12px">Inquire Specification <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              <button class="btn-green sm">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-card" data-categories="peptides,metabolic">
+          <div class="cc-image cat-metabolic">
+            <div class="cc-viz-sm" style="background:radial-gradient(circle,rgba(180,130,40,0.2) 0%,transparent 70%)"></div>
+            <button class="cart-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></button>
+          </div>
+          <div class="cc-body">
+            <div class="cc-name-row"><span class="cc-name">MOTS-c</span><span class="cc-price">$99.00</span></div>
+            <div class="cc-category">Peptide · Metabolic</div>
+            <p class="cc-desc">Mitochondria-encoded peptide. AMPK pathway activation for metabolic homeostasis and body composition.</p>
+            <div class="cc-actions">
+              <button class="btn-inquire" style="font-size:0.65rem;padding:7px 12px">Inquire Specification <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              <button class="btn-green sm">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-card" data-categories="neuro,peptides">
+          <div class="cc-image cat-neuro">
+            <div class="cc-viz-sm" style="background:radial-gradient(circle,rgba(100,60,140,0.2) 0%,transparent 70%)"></div>
+            <button class="cart-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></button>
+          </div>
+          <div class="cc-body">
+            <div class="cc-name-row"><span class="cc-name">Selank</span><span class="cc-price">$79.00</span></div>
+            <div class="cc-category">Neuro-cognitive · Anxiolytic</div>
+            <p class="cc-desc">Synthetic tuftsin derivative. Cognitive support, stress modulation, and stable neurological output under load.</p>
+            <div class="cc-actions">
+              <button class="btn-inquire" style="font-size:0.65rem;padding:7px 12px">Inquire Specification <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              <button class="btn-green sm">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- SCIENCE                                 -->
+<!-- ═══════════════════════════════════════ -->
+<div id="page-science" class="page">
+  <section class="inner-page">
+    <div class="inner-header">
+      <div class="tag">Research & Methodology</div>
+      <h1>The science<br>behind the atelier.</h1>
+      <p>Every compound is selected based on peer-reviewed research, third-party analytical verification, and outcome-specific protocol design.</p>
+    </div>
+    <div class="two-col" style="margin-bottom:10px">
+      <div class="info-card green"><div class="ic-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></div><div class="ic-title">US GMP-Compliant Sourcing</div><p class="ic-desc">All compounds are manufactured in FDA-registered, GMP-compliant US facilities. Every batch is traceable from synthesis to shipment — no grey market, no exceptions.</p></div>
+      <div class="info-card"><div class="ic-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="ic-title">Third-Party COA Verification</div><p class="ic-desc">Independent analytical testing covers identity (HPLC/MS), purity quantification, and contaminant screening. All COAs are publicly accessible in the library.</p></div>
+    </div>
+    <div class="two-col" style="margin-bottom:10px">
+      <div class="info-card"><div class="ic-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><div class="ic-title">Peer-Reviewed Selection</div><p class="ic-desc">Every addition to the catalog requires a minimum of three peer-reviewed studies with reproducible outcomes before inclusion.</p></div>
+      <div class="info-card green"><div class="ic-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><div class="ic-title">Protocol-First Architecture</div><p class="ic-desc">Compounds are designed as synergistic stacks based on mechanistic complementarity — not isolated supplementation.</p></div>
+    </div>
+    <div class="three-col">
+      <div class="info-card" style="text-align:center;align-items:center"><div class="ic-stat">99.2%</div><div class="ic-title">Avg. catalog purity</div></div>
+      <div class="info-card" style="text-align:center;align-items:center"><div class="ic-stat">14+</div><div class="ic-title">Verified compounds</div></div>
+      <div class="info-card" style="text-align:center;align-items:center"><div class="ic-stat">100%</div><div class="ic-title">COA transparency</div></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- AFFILIATES                              -->
+<!-- ═══════════════════════════════════════ -->
+<div id="page-affiliates" class="page">
+  <section class="inner-page">
+    <div class="inner-header">
+      <div class="tag">Partner Program</div>
+      <h1>Built for those<br>who set the standard.</h1>
+      <p>The Atelier affiliate program is designed for fitness creators, biohackers, and performance coaches who demand a brand that matches their credibility.</p>
+    </div>
+    <div class="three-col" style="margin-bottom:10px">
+      <div class="info-card green" style="text-align:center;align-items:center"><div class="ic-stat">20%</div><div class="ic-title">Commission per sale</div><p class="ic-desc">Among the highest rates in the precision peptide space.</p></div>
+      <div class="info-card" style="text-align:center;align-items:center"><div class="ic-stat">30d</div><div class="ic-title">Attribution window</div><p class="ic-desc">Long cookie window so you get credited for every referral, even days later.</p></div>
+      <div class="info-card" style="text-align:center;align-items:center"><div class="ic-stat" style="font-size:2rem">Custom</div><div class="ic-title">Protocol pages</div><p class="ic-desc">Co-branded landing pages tailored to your niche and audience.</p></div>
+    </div>
+    <div class="two-col" style="margin-bottom:40px">
+      <div class="info-card"><div class="ic-title">Real-Time Analytics</div><p class="ic-desc">Track clicks, conversions, and commission in real time. Export-ready reporting with UTM parameter support and custom link builder.</p></div>
+      <div class="info-card green"><div class="ic-title">Dedicated Support</div><p class="ic-desc">Direct line to the affiliate team. Content review, compound briefings, and protocol materials provided on request.</p></div>
+    </div>
+    <div style="text-align:center"><button class="btn-green" style="font-size:0.85rem;padding:13px 40px">Apply to Partner</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- ACCOUNT                                 -->
+<!-- ═══════════════════════════════════════ -->
+<div id="page-account" class="page">
+  <section class="inner-page">
+    <div class="account-wrap">
+      <div class="account-card">
+        <div class="tag" style="margin-bottom:14px">Secure Access</div>
+        <h1>Access Portal</h1>
+        <p>Manage orders, protocol subscriptions, COA library, and institutional credentials.</p>
+        <div class="form-group"><label class="form-label">Email address</label><input type="email" placeholder="researcher@institution.edu" class="form-input" /></div>
+        <div class="form-group"><label class="form-label">Password</label><input type="password" placeholder="••••••••" class="form-input" /></div>
+        <button class="btn-green full" style="margin-top:6px">Enter Portal</button>
+        <p class="form-link">No account? <a href="#">Request institutional access →</a></p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- FOOTER                                  -->
+<!-- ═══════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo">The Clinical Atelier</span>
+      <p>Scientific precision architecture. Curating the future of molecular research through bespoke chemical synthesis.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a data-page="science">Privacy Protocol</a>
+      <a href="#">Terms of Synthesis</a>
+      <a data-page="science">Global Compliance</a>
+      <a href="#">Security Whitepaper</a>
+    </div>
+    <div class="footer-col">
+      <h4>Lab Connect</h4>
+      <a href="#">Technical Support</a>
+      <a href="#">Wholesale Portal</a>
+      <a href="#">Media Assets</a>
+      <a href="#">Lab Locations</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="#">Direct Line: +44 20 7946 0958</a>
+      <a href="#">lab@clinicalatelier.com</a>
+    </div>
+    <div class="footer-col">
+      <h4>System Status</h4>
+      <div class="footer-status">
+        <div class="status-indicator">
+          <div class="status-dot"></div>
+          Global Server Online
+        </div>
+        <div class="status-bar"><div class="status-bar-fill"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 The Clinical Atelier. All rights reserved.</span>
+    <span class="footer-version">Encrypted with SHA-256 · V4.3-Stable</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
